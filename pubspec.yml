@@ -1,0 +1,8 @@
+name: jubilant_todo
+description: >
+  A To-do list, as I progressively get better at Dart development.
+  Over time, more dependencies and cross-platform functionality will
+  be supported.
+author: Stephen Fox <stevethecoder34@gmail.com>
+dependencies:
+  browser: any
