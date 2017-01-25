@@ -1,0 +1,34 @@
+/* Overall hygiene */
+.horizontal-center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.standard-width {
+    width: 60%;
+}
+
+#todo-list {
+    margin: 0;
+    padding: 0;
+}
+
+#todo-list > li {
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Style effect classes */
+.bkg-color-blue {
+    background-color: #00c3ff;
+}
+
+.text-color-white {
+    color: whitesmoke;
+}
+
+/* state change classes */
+.completed-todo {
+    text-decoration: line-through;
+}
