@@ -28,5 +28,9 @@ void main() {
 
 LIElement visualize({Todo todo}) {
   // TODO: read the and modify the existing LIElement. Don't make a new one
-  return new LIElement()..text = todo.text;
+  return new LIElement()
+    ..text = todo.text
+    ..onClick.listen((e) {
+      (e.currentTarget as LIElement).classes.toggle('completed-todo');
+    });
 }
