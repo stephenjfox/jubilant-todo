@@ -32,7 +32,9 @@ void main() {
 TodoController visualize({String todoText}) {
   final Todo newTodo = new Todo(todoText);
 
-  return new TodoController(newTodo, new LIElement()..text = newTodo.text);
+  return new TodoController(newTodo, new LIElement()
+    ..text = newTodo.text
+    ..classes.add("todoList__item"));
 }
 
 class TodoController {
@@ -44,7 +46,7 @@ class TodoController {
   }
 
   void handleClick(MouseEvent event) {
-    view.classes.toggle('completed-todo'); // toggle the view
+    view.classes.toggle('todoList__item--completed'); // toggle the view
     todo.isDone = !todo.isDone; // toggle the backing data
     print('handleClick - $todo');
   }
