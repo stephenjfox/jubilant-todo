@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* Hygiene: giving bounds to our work */
+.horizontal-center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.standard-width {
+    width: 60%;
+}
+
+/* Actual relevant styling */
+
+.title {
+    font-family: 'Lato', 'sans-serif';
+}
+
+
+.todoList {
+    margin: 0;
+    padding: 0 20px;
+    background-color: #00c3ff;
+}
+
+.todoList__input {
+    height: 15%;
+    width: 50%;
+
+    text-align: center;
+    font-size: 24px;
+}
+
+.todoList__item {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 4px;
+
+    font-family: 'Roboto', 'sans-serif';
+
+    color: whitesmoke;
+}
+
+.todoList__item--completed {
+    text-decoration: line-through;
+}
